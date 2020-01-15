@@ -1,8 +1,8 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int arr[]={6,5,3,8,5,0,3}, k , br[100]={0}, i, size_t,count=0;
+    int arr[]={7,10,4,3,20,15}, k , br[100]={0}, i, size_t,count=0;
+    scanf("%d",&k);
     size_t=sizeof(arr)/sizeof(arr[0]);
     for(i=0;i<size_t;i++)
     {
@@ -15,7 +15,7 @@ int main()
        
          count+=1;
         
-         if(count==3)
+         if(count==k)
          {
              printf("%d",i);
              break;
